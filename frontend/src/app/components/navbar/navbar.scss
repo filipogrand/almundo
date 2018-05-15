@@ -1,0 +1,33 @@
+.navbar
+{
+    background-color: #002F6E;
+    height: 82px;
+    margin-bottom: 0px;
+    border-bottom: solid #325F8B 1px;
+
+    .container-fluid
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+
+        .navbar-header
+        {
+            line-height: 82px;
+        }
+    }
+}
+
+@media (max-width: 768px)
+{
+    .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .navbar
+    {
+        height: 50px;
+        .container-fluid .navbar-header { line-height: 50px; }
+       #logo-almundo { width: 150px; }
+    }
+}

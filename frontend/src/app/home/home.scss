@@ -1,0 +1,365 @@
+.homeContainer
+{
+    .homeLeftSection
+    {
+        font-size: 17px;
+        padding-top: 23px;
+        padding-left: 24px;
+        padding-right: 0px;
+
+        .filterSection
+        {
+            background-color: #F3F3F4;
+            box-shadow: 0px 0px 1px 0px #ddd;
+
+            > div
+            {
+                padding-left: 15px;
+                background-color: white;
+            }
+        }
+
+        .filterTitle
+        {
+            height: 39px;
+            padding-top: 7px;
+            font-weight: bold;
+            color: $colorBlackText;
+        }
+
+        .filterTitleMobile { display: none;}
+
+        .filterHotelName
+        {
+            margin-top: 5px;
+            padding-bottom: 6px;
+            font-weight: bold;
+
+            .homeSearchActiveLabel
+            {
+                padding-top: 10px;
+            }
+        }
+
+        .homeSearchActiveLabel, .homeSeachStarsContent { cursor: pointer; }
+
+        .homeSVGIcons
+        {
+            width: 16px;
+
+            &.dropdownIcons
+            {
+                top: 2px;
+                position: relative;
+            }
+        }
+
+        .filterHotelNameLabel
+        {
+            font-weight: bold;
+            color: $colorBlueText;
+            letter-spacing: -0.33px;
+            font-size: 14px;
+            margin-left: 3px;
+
+            .fa-sort-desc, .fa-sort-asc
+            {
+                color: $colorBlueText;
+                float: right;
+                font-size: 16px;
+                margin-right: 19px;
+            }
+
+            .fa-sort-asc
+            {
+                top: 7px;
+                position: relative;
+            }
+        }
+
+        .homeSearchInputContent
+        {
+            margin-top: 13px;
+
+            .homeSearchInput
+            {
+                width: 166px;
+                font-size: 14px;
+                height: 31px;
+                padding-left: 7px;
+                margin-right: 11px;
+            }
+        }
+
+        .homeSeachStarsContent
+        {
+            margin-top: 5px;
+            padding-top: 11px;
+            padding-bottom: 7px;
+        }
+
+        .homeSeachStarsCheckbox
+        {
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+            div input
+            {
+                width: 12px;
+                margin-right: 5px;
+            }
+
+            label
+            {
+                font-size: 12px;
+                letter-spacing: -0.3px;
+
+                .homeSVGIcons
+                {
+                    width: 14px;
+                    margin-right: 1px;
+                }
+            }
+
+            .homeStarCheckbox
+            {
+                margin-top: 4px;
+                height: 28px;
+            }
+        }
+    }
+
+
+
+
+
+    .homeRightSection
+    {
+        margin-top: 23px;
+
+        .homeHotelCardInfo
+        {
+            padding: 7px 0px 7px 10px;
+            box-shadow: 0px 0px 1px 0px #ddd;
+            margin-bottom: 15px;
+            background-color: white;
+
+            .homeHotelImageContent
+            {
+                display: inline-block;
+                max-width: 313px;
+                height: 190px;
+                overflow: hidden;
+                padding-right: 0px;
+
+                img { width: 100%; }
+            }
+
+            .homeHotelInfo
+            {
+                display: inline-block;
+                vertical-align: top;
+
+                h1
+                {
+                    color: $colorBlueText;
+                    margin-top: 3px;
+                    margin-bottom: 5px;
+                    font-size: 17px;
+                    letter-spacing: -0.7px;
+                }
+
+                .homeSVGIcons
+                {
+                    width: 16px;
+                }
+            }
+
+            .amenityContent
+            {
+                margin-top: 8px;
+
+                .amenity
+                {
+                    display: inline-block;
+                    img
+                    {
+                        width: 18px;
+                        margin-left: 6px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+
+            .homeHotelPriceContent
+            {
+                display: inline-block;
+                text-align: center;
+
+                .homeHotelPriceInside
+                {
+                    border-left: $colorGrayBorder 1px dashed;
+                    width: 70%;
+                    margin: 0 auto;
+                    padding-left: 34px;
+                    padding-top: 24px;
+                    vertical-align: top;
+                    padding-bottom: 40px;
+
+                    .homeHotelPriceTitle
+                    {
+                        font-size: 12px;
+                        max-width: 150px;
+                        margin: 0px auto 9px auto;
+                        padding-left: 34px;
+                    }
+
+                    .homeHotelPrice
+                    {
+                        padding-left: 18px;
+                        position: relative;
+                        left: 12px;
+                        
+                        span
+                        {
+                            color: $colorOrangePrice;
+                            
+                            &.curerncy
+                            {
+                                font-size: 23px;
+                                vertical-align: top;
+                            }
+
+                            &.value
+                            {
+                                font-size: 36px;
+                                line-height: 32px;
+                            }
+                        }
+                    }
+
+                    .homeHotelButton
+                    {
+                        margin-top: 11px;
+                        padding-left: 34px;
+
+                        button.blueButton
+                        {
+                            font-size: 20px;
+                            width: 100%;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px)
+{
+    .homeContainer 
+    {
+        .homeLeftSection
+        {
+            padding-top: 0px;
+            padding-left: 0px;
+
+            .filterSection > div { text-align: center; padding-left: 0; }
+
+            .filterTitle { display: none }
+
+            .filterTitleMobile
+            {
+                display: block;
+                height: 39px;
+                padding-top: 7px;
+                font-weight: bold;
+                color: $colorBlueText;
+
+                .fa-sort-desc, .fa-sort-asc
+                {
+                    color: $colorBlueText;
+                    font-size: 16px;
+                    margin-right: 19px;
+                    display: inline-block;
+                    position: relative;
+                    top: -4px;
+                    margin-left: 4px;
+                }
+
+                .fa-sort-asc
+                {
+                    top: 4px;
+                    position: relative;
+                }
+            }
+
+            #filterContent
+            {
+                display: none;
+                &.active { display: block; }
+            }
+
+            .homeSeachStarsCheckbox
+            {
+                text-align: left;
+                width: 40%;
+                margin: 0 auto;
+            }
+        }
+
+
+        .homeRightSection
+        {
+            margin-top: 16px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .homeHotelCardInfo
+            {
+                padding: 7px 7px 7px 10px;
+
+                .homeHotelImageContent
+                {
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                    padding-right: 15px;
+                }
+
+                .homeHotelInfo
+                {
+                    margin-top: 11px;
+                    h1
+                    {
+                        margin-bottom: 9px;
+                    }
+                }
+
+                .homeHotelPriceContent
+                {
+                    margin-top: 25px;
+                    .homeHotelPriceInside
+                    {
+                        border-left: none;
+                        border-top: $colorGrayBorder 1px dashed;
+                        padding-left: 0px;
+                        padding-top: 16px;
+                        width: 100%;
+
+                        .homeHotelPriceTitle { padding-left: 0px; max-width: 300px; }
+                        .homeHotelPrice { padding-left: 0px; left: 0px; }
+                        .homeHotelButton { padding-left: 0px; }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
